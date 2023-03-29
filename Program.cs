@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Net;
-using Newtonsoft.Json; // essa é um pacote que eu adicionei manualmente no nuget packages para conseruir ler o json
+using Newtonsoft.Json; // esse é um pacote que eu adicionei manualmente no nuget para conseguir consumir o json
 class Program
 {
     static void Main(string[] args)
@@ -42,7 +42,7 @@ class Program
         }
         catch (WebException ex)
         {
-            Console.WriteLine($"Erro ao acessar o arquivo JSON: {ex.Message}");
+            Console.WriteLine($"Erro: {ex.Message}");
         }
     }
 }
